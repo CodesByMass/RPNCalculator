@@ -2,7 +2,7 @@ package main;
 
 public enum Operation {
 	
-	
+	// Double bien plus précis qu'un float
 	PLUS('+') {
 		public double eval(double operand_a, double operand_b)
 		{
