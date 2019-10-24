@@ -4,7 +4,7 @@ package main;
 public class MissingOperandException extends Exception {
 	
 	public MissingOperandException() {
-		super("Il manque un opérande !") ;
+		super("Il manque au moins un opérande !") ;
 	}
 
 }
