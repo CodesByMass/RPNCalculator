@@ -26,7 +26,7 @@ public class MoteurRPN {
 	}
 	
 	public String getOperands() {
-		String operands = "La pile contient /n ";
+		String operands = "La pile contient \n ";
 		for (double operand : this.numbers_stack)
 		{
 			operands += operand + " " ;
@@ -47,13 +47,11 @@ public class MoteurRPN {
 					this.addOperand(op.eval(operandA, operandB));
 				}catch (ArithmeticException e) {
 					System.out.println("Exception: "+e.getMessage());
+					if (operandA != Double.MIN_VALUE) this.addOperand(operandA);
+					if (operandB != Double.MIN_VALUE) this.addOperand(operandB);
 				}
 				catch (EmptyStackException e) {
 					System.out.println("Exception: "+e.getMessage());
-				}
-				finally {
-					if (operandA != Double.MIN_VALUE) this.addOperand(operandA);
-					if (operandB != Double.MIN_VALUE) this.addOperand(operandB);
 				}
 			} else throw new MissingOperandException() ;
 			
