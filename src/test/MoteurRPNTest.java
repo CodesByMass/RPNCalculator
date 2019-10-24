@@ -58,7 +58,6 @@ public class MoteurRPNTest {
 		res = a + b ;
 		moteurRPN.addOperand(2);
 		moteurRPN.addOperand(3);
-		//stack.pushOperand(res);
 		assertTrue(plus.eval(a,b) == res);
 
 	}

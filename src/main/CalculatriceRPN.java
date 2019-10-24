@@ -4,20 +4,20 @@ public enum CalculatriceRPN {
 	
 		CALCULATRICE(new SaisieRPN());
 			
-			private SaisieRPN saisierpn;
+			private SaisieRPN inputRPN ;
 			
-			CalculatriceRPN( SaisieRPN saisie)
+			CalculatriceRPN( SaisieRPN input)
 			{
-				 saisierpn= saisie ;
+				 inputRPN = input ;
 			}
-			public void traitement() throws MissingOperandException {
+			public void launch() throws MissingOperandException {
 			
-				saisierpn.userInteraction();
+				inputRPN.userInteraction();
 			}
 			
-			public static void main(String[] args) throws MissingOperandException {
+			public static void main(String[] args) throws MissingOperandException  {
 				
-				CalculatriceRPN.CALCULATRICE.traitement();
+				CalculatriceRPN.CALCULATRICE.launch();
 			}
 
 		}

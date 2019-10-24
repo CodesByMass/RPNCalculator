@@ -9,9 +9,9 @@ import main.SaisieRPN;
 public class SaisieRPNTest {
 
 	@Test
-	public void testSaisie() {
-		SaisieRPN saisieRPN = new SaisieRPN();
-		assertNotNull(saisieRPN);
+	public void testInput() {
+		SaisieRPN inputRPN = new SaisieRPN();
+		assertNotNull(inputRPN);
 	}
 	
 

@@ -67,7 +67,7 @@ public class SaisieRPN {
 				}
 				}
 			}
-			catch(MinIntervalException | MaxIntervalException e)
+			catch(MinIntervalException | MaxIntervalException | MissingOperandException e)
 			{
 				System.out.println(e.getMessage());
 			}
