@@ -17,10 +17,7 @@ public class SaisieRPN {
 		System.out.println(" Veuillez entrez un Opérande | exit pour quitter | restart pour vider la pile ") ;
 		String input = sc.nextLine();
 		double new_operand;
-		if (input == "restart")
-		{
-			
-		}
+		
 		while (!input.equals("exit"))
 		{
 			try 
@@ -67,14 +64,14 @@ public class SaisieRPN {
 				}
 				}
 			}
-			catch(MinIntervalException | MaxIntervalException | MissingOperandException e)
+			catch(MissingOperandException | MinIntervalException | MaxIntervalException e)
 			{
 				System.out.println(e.getMessage());
 			}
 			//Si on écrit un caractère spécial par exemple
 			catch(NumberFormatException e)
 			{
-				System.out.println("saisie incorrecte (Entrez une operande ou quitter pour quitter le programme)");
+				System.out.println("Caractères incorrectes");
 			}
 			
 			finally {

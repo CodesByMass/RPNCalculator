@@ -51,7 +51,7 @@ public enum Operation {
 		this.symbole = symbole;
 	}
 	
-	public abstract double eval(double operande_1, double operande_2);
+	public abstract double eval(double operand_1, double operand_2);
 	
 	public char getOperation()
 	{

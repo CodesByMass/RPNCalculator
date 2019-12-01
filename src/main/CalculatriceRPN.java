@@ -8,6 +8,7 @@ public enum CalculatriceRPN {
 			
 			CalculatriceRPN( SaisieRPN input)
 			{
+				 System.out.println(" Bienvenue sur la Reverse Polish Notation Calculatrice ");
 				 inputRPN = input ;
 			}
 			public void launch() throws MissingOperandException {
